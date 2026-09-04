@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Afiq & Virga — Undangan Pernikahan</title>
+
+  <meta name="description"
+        content="Undangan Pernikahan Afiq Nur Fadhilah & Virga Ayu Farmawan">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #090909;
+      color: #f5f5f5;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
+    }
+
+    section {
+      position: relative;
+      padding: 80px 20px;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title .small {
+      color: #d6b56d;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-title h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      font-weight: 500;
+    }
+
+    .divider {
+      width: 70px;
+      height: 1px;
+      background: #d6b56d;
+      margin: 18px auto;
+    }
+
+
+    /* ================= COVER ================= */
+
+    .cover {
+      min-height: 100vh;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,.68),
+          rgba(0,0,0,.78)
+        ),
+        url('foto-pernikahan.jpg')
+        center/cover no-repeat;
+    }
+
+    .cover-content {
+      padding: 30px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .cover-subtitle {
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #d6b56d;
+      margin-bottom: 20px;
+    }
+
+    .cover h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(65px, 15vw, 120px);
+      line-height: .85;
+      font-weight: 500;
+    }
+
+    .cover h1 span {
+      color: #d6b56d;
+      font-size: .55em;
+      display: block;
+      margin: 15px 0;
+    }
+
+    .cover-date {
+      margin-top: 30px;
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+
+    .open-btn {
+      display: inline-block;
+
+      margin-top: 35px;
+      padding: 13px 30px;
+
+      border: 1px solid #d6b56d;
+
+      color: #d6b56d;
+      text-decoration: none;
+
+      font-size: 12px;
+      letter-spacing: 2px;
+
+      transition: .3s;
+    }
+
+    .open-btn:hover {
+      background: #d6b56d;
+      color: #111;
+    }
+
+
+    /* ================= COUPLE ================= */
+
+    .couple {
+      background: #101010;
+    }
+
+    .intro {
+      text-align: center;
+
+      max-width: 650px;
+      margin: auto;
+
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .couple-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 50px;
+
+      margin-top: 50px;
+    }
+
+    .person {
+      text-align: center;
+    }
+
+    .person-photo {
+      width: 190px;
+      height: 240px;
+
+      margin: 0 auto 25px;
+
+      object-fit: cover;
+
+      border: 1px solid #d6b56d;
+      padding: 6px;
+
+      display: block;
+    }
+
+    .person h3 {
+      font-family: 'Cormorant Garamond', serif;
+
+      color: #d6b56d;
+
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    .person p {
+      color: #bbb;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+
+    /* ================= COUNTDOWN ================= */
+
+    .countdown-section {
+      background: #090909;
+      text-align: center;
+    }
+
+    .countdown {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      max-width: 650px;
+
+      margin: auto;
+
+      gap: 12px;
+    }
+
+    .time-box {
+      border: 1px solid #333;
+
+      padding: 20px 10px;
+    }
+
+    .time-box strong {
+      display: block;
+
+      color: #d6b56d;
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 38px;
+
+      font-weight: 500;
+    }
+
+    .time-box span {
+      font-size: 10px;
+
+      letter-spacing: 2px;
+
+      color: #aaa;
+    }
+
+
+    /* ================= SAVE DATE ================= */
+
+    .save-date {
+      background: #111;
+      text-align: center;
+    }
+
+    .date-big {
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 70px;
+
+      color: #d6b56d;
+
+      line-height: 1;
+    }
+
+    .date-month {
+      letter-spacing: 5px;
+      margin-top: 10px;
+    }
+
+
+    /* ================= EVENTS ================= */
+
+    .events {
+      background: #090909;
+    }
+
+    .event-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .event-card {
+      border: 1px solid #333;
+
+      padding: 35px 20px;
+
+      text-align: center;
+
+      transition: .3s;
+    }
+
+    .event-card:hover {
+      border-color: #d6b56d;
+
+      transform:
+        translateY(-4px);
+    }
+
+    .event-icon {
+      font-size: 28px;
+
+      margin-bottom: 15px;
+    }
+
+    .event-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+
+      color: #d6b56d;
+
+      font-size: 29px;
+
+      font-weight: 500;
+
+      margin-bottom: 15px;
+    }
+
+    .event-card .date {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .event-card .time {
+      color: #d6b56d;
+
+      font-size: 13px;
+
+      margin: 8px 0;
+    }
+
+    .event-card .address {
+      color: #999;
+
+      font-size: 12px;
+
+      margin-top: 15px;
+    }
+
+    .map-btn {
+      display: inline-block;
+
+      margin-top: 18px;
+
+      padding: 9px 15px;
+
+      border: 1px solid #d6b56d;
+
+      color: #d6b56d;
+
+      text-decoration: none;
+
+      font-size: 10px;
+
+      letter-spacing: 1px;
+    }
+
+
+    /* ================= ADAB ================= */
+
+    .adab {
+      background: #111;
+      text-align: center;
+    }
+
+    .adab-box {
+      max-width: 700px;
+
+      margin: auto;
+
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+
+      padding: 35px 20px;
+
+      color: #ccc;
+
+      font-size: 14px;
+    }
+
+    .adab-box p + p {
+      margin-top: 15px;
+    }
+
+
+    /* ================= STORY ================= */
+
+    .story {
+      background: #090909;
+    }
+
+    .story-box {
+      max-width: 700px;
+
+      margin: auto;
+
+      text-align: center;
+
+      color: #bbb;
+
+      font-size: 14px;
+    }
+
+    .story-box .quote {
+      font-family: 'Cormorant Garamond', serif;
+
+      color: #d6b56d;
+
+      font-size: 30px;
+
+      margin-bottom: 20px;
+    }
+
+
+    /* ================= GIFT ================= */
+
+    .gift {
+      background: #111;
+
+      text-align: center;
+    }
+
+    .bank-card {
+      max-width: 420px;
+
+      margin: auto;
+
+      border: 1px solid #d6b56d;
+
+      padding: 35px 20px;
+    }
+
+    .bank-name {
+      font-size: 14px;
+
+      letter-spacing: 4px;
+
+      color: #d6b56d;
+    }
+
+    .account-number {
+      font-size: 24px;
+
+      margin: 20px 0 5px;
+
+      letter-spacing: 2px;
+    }
+
+    .account-name {
+      font-size: 12px;
+
+      color: #aaa;
+    }
+
+    .copy-btn {
+      margin-top: 20px;
+
+      padding: 9px 20px;
+
+      background: transparent;
+
+      border: 1px solid #555;
+
+      color: #ddd;
+
+      cursor: pointer;
+    }
+
+
+    /* ================= RSVP ================= */
+
+    .rsvp {
+      background: #090909;
+
+      text-align: center;
+    }
+
+    .rsvp p {
+      color: #aaa;
+
+      max-width: 550px;
+
+      margin: auto;
+
+      font-size: 14px;
+    }
+
+    .wa-btn {
+      display: inline-block;
+
+      margin-top: 25px;
+
+      padding: 13px 28px;
+
+      border: 1px solid #d6b56d;
+
+      color: #d6b56d;
+
+      text-decoration: none;
+
+      font-size: 12px;
+
+      letter-spacing: 2px;
+    }
+
+
+    /* ================= INVITED ================= */
+
+    .invited {
+      background: #111;
+
+      text-align: center;
+    }
+
+    .invited p {
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 28px;
+
+      color: #d6b56d;
+    }
+
+
+    /* ================= CLOSING ================= */
+
+    .closing {
+      min-height: 70vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,.75),
+          rgba(0,0,0,.9)
+        ),
+        url('foto-pernikahan.jpg')
+        center/cover no-repeat;
+    }
+
+    .closing h2 {
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 55px;
+
+      color: #d6b56d;
+
+      font-weight: 500;
+    }
+
+    .closing p {
+      margin-top: 15px;
+
+      color: #ccc;
+
+      font-size: 13px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      text-align: center;
+
+      background: #050505;
+
+      padding: 25px;
+
+      color: #666;
+
+      font-size: 10px;
+
+      letter-spacing: 2px;
+    }
+
+
+    /* ================= MUSIC BUTTON ================= */
+
+    #musicBtn {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 45px;
+      height: 45px;
+
+      border-radius: 50%;
+
+      border: 1px solid #d6b56d;
+
+      background: #111;
+
+      color: #d6b56d;
+
+      font-size: 18px;
+
+      cursor: pointer;
+
+      z-index: 9999;
+    }
+
+
+    /* ================= ANIMATION ================= */
+
+    @keyframes fadeUp {
+
+      from {
+        opacity: 0;
+
+        transform:
+          translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+
+        transform:
+          translateY(0);
+      }
+
+    }
+
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 700px) {
+
+      section {
+        padding: 65px 17px;
+      }
+
+      .section-title h2 {
+        font-size: 36px;
+      }
+
+      .couple-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+      }
+
+      .event-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .countdown {
+        grid-template-columns:
+          repeat(2, 1fr);
+
+        max-width: 350px;
+      }
+
+      .date-big {
+        font-size: 60px;
+      }
+
+      .closing h2 {
+        font-size: 45px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- ================= COVER ================= -->
+
+  <section class="cover">
+
+    <div class="cover-content">
+
+      <div class="cover-subtitle">
+        The Wedding Of
+      </div>
+
+      <h1>
+        Afiq
+
+        <span>&</span>
+
+        Virga
+      </h1>
+
+      <div class="cover-date">
+        SENIN, 7 SEPTEMBER 2026
+      </div>
+
+      <a
+        href="#couple"
+        class="open-btn"
+        onclick="openInvitation()"
+      >
+        BUKA UNDANGAN
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= COUPLE ================= -->
+
+  <section
+    class="couple"
+    id="couple"
+  >
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Mempelai
+        </div>
+
+        <h2>
+          Assalamu'alaikum
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <p class="intro">
+
+        Dengan memohon rahmat dan ridho Allah SWT,
+        kami bermaksud menyelenggarakan pernikahan
+        putra dan putri kami.
+
+      </p>
+
+
+      <div class="couple-grid">
+
+
+        <!-- AFIQ -->
+
+        <div class="person">
+
+          <img
+            src="afiq nur fadhilah.jpg"
+            alt="Afiq Nur Fadhilah"
+            class="person-photo"
+          >
+
+          <h3>
+            Afiq Nur Fadhilah
+          </h3>
+
+          <p>
+            Putra ke-2 dari<br>
+            Bapak Tarjuki & Ibu Karimah
+          </p>
+
+        </div>
+
+
+        <!-- VIRGA -->
+
+        <div class="person">
+
+          <img
+            src="virga ayu farmawan.jpg"
+            alt="Virga Ayu Farmawan"
+            class="person-photo"
+          >
+
+          <h3>
+            Virga Ayu Farmawan
+          </h3>
+
+          <p>
+            Putri ke-1 dari<br>
+            Alm. Bapak Nurwantoro & Ibu Ikmah Khatuliswati
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= COUNTDOWN ================= -->
+
+  <section class="countdown-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Menuju Hari Bahagia
+        </div>
+
+        <h2>
+          Save The Date
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <div class="countdown">
+
+        <div class="time-box">
+
+          <strong id="days">
+            00
+          </strong>
+
+          <span>
+            HARI
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="hours">
+            00
+          </strong>
+
+          <span>
+            JAM
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="minutes">
+            00
+          </strong>
+
+          <span>
+            MENIT
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="seconds">
+            00
+          </strong>
+
+          <span>
+            DETIK
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SAVE DATE ================= -->
+
+  <section class="save-date">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Save The Date
+        </div>
+
+        <h2>
+          Our Special Day
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <div class="date-big">
+        07
+      </div>
+
+      <div class="date-month">
+        SEPTEMBER 2026
+      </div>
+
+      <p
+        style="margin-top:15px;color:#aaa;"
+      >
+        Senin
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= EVENTS ================= -->
+
+  <section class="events">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Rangkaian Acara
+        </div>
+
+        <h2>
+          Wedding Event
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <div class="event-grid">
+
+
+        <!-- RAMAH TAMAH -->
+
+        <div class="event-card">
+
+          <div class="event-icon">
+            🤝
+          </div>
+
+          <h3>
+            Ramah Tamah
+          </h3>
+
+          <div class="date">
+            Minggu – Senin
+          </div>
+
+          <div class="time">
+            6 – 7 September 2026
+          </div>
+
+          <div class="address">
+            Gg. Baldes RT 05 RW 02<br>
+            Kepunduhan
+          </div>
+
+          <a
+            href="https://goo.gl/maps/XoVq6TzEVPEzjx417"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-btn"
+          >
+            📍 BUKA GOOGLE MAPS
+          </a>
+
+        </div>
+
+
+        <!-- AKAD -->
+
+        <div class="event-card">
+
+          <div class="event-icon">
+            💍
+          </div>
+
+          <h3>
+            Akad Nikah
+          </h3>
+
+          <div class="date">
+            Senin, 7 September 2026
+          </div>
+
+          <div class="time">
+            08.00 WIB
+          </div>
+
+          <div class="address">
+            Desa Kepunduhan RT.02 RW.01 No.13<br>
+            Sebelah utara Mushola Baitul Mustaqim
+          </div>
+
+          <a
+            href="https://maps.app.goo.gl/hBqp3gqsbjDdRwe68"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-btn"
+          >
+            📍 BUKA GOOGLE MAPS
+          </a>
+
+        </div>
+
+
+        <!-- RESEPSI -->
+
+        <div class="event-card">
+
+          <div class="event-icon">
+            🎉
+          </div>
+
+          <h3>
+            Resepsi
+          </h3>
+
+          <div class="date">
+            Senin, 7 September 2026
+          </div>
+
+          <div class="time">
+            10.00 – 20.00 WIB
+          </div>
+
+          <div class="address">
+            Desa Kepunduhan RT.02 RW.01 No.13<br>
+            Sebelah utara Mushola Baitul Mustaqim
+          </div>
+
+          <a
+            href="https://maps.app.goo.gl/hBqp3gqsbjDdRwe68"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-btn"
+          >
+            📍 BUKA GOOGLE MAPS
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ADAB ================= -->
+
+  <section class="adab">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Adab Pernikahan
+        </div>
+
+        <h2>
+          Doa & Harapan
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <div class="adab-box">
+
+        <p>
+          Merupakan suatu kehormatan dan kebahagiaan
+          bagi kami apabila Bapak/Ibu/Saudara/i
+          berkenan hadir dan memberikan doa restu.
+        </p>
+
+        <p>
+          Mohon maaf apabila terdapat kesalahan
+          dalam penulisan nama, gelar, maupun alamat.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= STORY ================= -->
+
+  <section class="story">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Our Story
+        </div>
+
+        <h2>
+          Perjalanan Kami
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <div class="story-box">
+
+        <div class="quote">
+          “
+        </div>
+
+        <p>
+
+          Setiap pertemuan memiliki cerita,
+          setiap cerita memiliki perjalanan,
+          dan setiap perjalanan membawa kami
+          menuju satu tujuan: membangun kehidupan
+          bersama dalam ikatan pernikahan.
+
+        </p>
+
+        <p style="margin-top:20px;">
+
+          Semoga langkah ini menjadi awal dari
+          perjalanan panjang yang penuh kasih,
+          keberkahan, dan kebahagiaan.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= WEDDING GIFT ================= -->
+
+  <section class="gift">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Wedding Gift
+        </div>
+
+        <h2>
+          Tanda Kasih
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <p
+        style="
+          color:#aaa;
+          max-width:600px;
+          margin:0 auto 30px;
+        "
+      >
+
+        Doa restu dari Bapak/Ibu/Saudara/i
+        merupakan hadiah terindah bagi kami.
+        Namun apabila ingin memberikan tanda kasih,
+        dapat melalui rekening berikut:
+
+      </p>
+
+
+      <div class="bank-card">
+
+        <div class="bank-name">
+          SEABANK
+        </div>
+
+        <div class="account-number">
+          901848072687
+        </div>
+
+        <div class="account-name">
+          Afiq Nur Fadhilah
+        </div>
+
+        <button
+          class="copy-btn"
+          onclick="copyRekening()"
+        >
+          SALIN NOMOR REKENING
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= RSVP ================= -->
+
+  <section class="rsvp">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Konfirmasi Kehadiran
+        </div>
+
+        <h2>
+          RSVP
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <p>
+
+        Untuk membantu kami dalam mempersiapkan acara,
+        silakan melakukan konfirmasi kehadiran melalui
+        WhatsApp.
+
+      </p>
+
+
+      <a
+        href="https://wa.me/6285291061031?text=Assalamu%27alaikum%2C%20saya%20ingin%20mengkonfirmasi%20kehadiran%20di%20acara%20pernikahan%20Afiq%20%26%20Virga."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="wa-btn"
+      >
+        KONFIRMASI VIA WHATSAPP
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= TURUT MENGUNDANG ================= -->
+
+  <section class="invited">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <div class="small">
+          Turut Mengundang
+        </div>
+
+        <h2>
+          Keluarga
+        </h2>
+
+        <div class="divider"></div>
+
+      </div>
+
+
+      <p>
+        Segenap Keluarga
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CLOSING ================= -->
+
+  <section class="closing">
+
+    <div>
+
+      <div class="cover-subtitle">
+        Afiq & Virga
+      </div>
+
+      <h2>
+        Sampai Jumpa
+      </h2>
+
+      <p>
+        Terima kasih atas doa dan restu yang diberikan.
+      </p>
+
+      <p
+        style="
+          margin-top:25px;
+          color:#d6b56d;
+        "
+      >
+        Wassalamu'alaikum Warahmatullahi Wabarakatuh
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    AFIQ & VIRGA • 7 SEPTEMBER 2026
+
+  </footer>
+
+
+  <!-- ================= MUSIC ================= -->
+
+  <audio
+    id="music"
+    loop
+    preload="auto"
+  >
+
+    <source
+      src="lagu-pernikahan.mp3"
+      type="audio/mpeg"
+    >
+
+  </audio>
+
+
+  <button
+    id="musicBtn"
+    onclick="toggleMusic()"
+    aria-label="Putar atau hentikan musik"
+  >
+    🔇
+  </button>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    /* ================= COUNTDOWN ================= */
+
+    const weddingDate =
+      new Date(
+        "September 7, 2026 08:00:00"
+      ).getTime();
+
+
+    function updateCountdown() {
+
+      const now =
+        new Date().getTime();
+
+      const distance =
+        weddingDate - now;
+
+
+      if (distance <= 0) {
+
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+
+        return;
+      }
+
+
+      const days =
+        Math.floor(
+          distance /
+          (1000 * 60 * 60 * 24)
+        );
+
+
+      const hours =
+        Math.floor(
+          (
+            distance %
+            (1000 * 60 * 60 * 24)
+          ) /
+          (1000 * 60 * 60)
+        );
+
+
+      const minutes =
+        Math.floor(
+          (
+            distance %
+            (1000 * 60 * 60)
+          ) /
+          (1000 * 60)
+        );
+
+
+      const seconds =
+        Math.floor(
+          (
+            distance %
+            (1000 * 60)
+          ) /
+          1000
+        );
+
+
+      document.getElementById("days").innerText =
+        String(days).padStart(2, "0");
+
+      document.getElementById("hours").innerText =
+        String(hours).padStart(2, "0");
+
+      document.getElementById("minutes").innerText =
+        String(minutes).padStart(2, "0");
+
+      document.getElementById("seconds").innerText =
+        String(seconds).padStart(2, "0");
+
+    }
+
+
+    updateCountdown();
+
+    setInterval(
+      updateCountdown,
+      1000
+    );
+
+
+    /* ================= MUSIC ================= */
+
+    const music =
+      document.getElementById("music");
+
+    const musicBtn =
+      document.getElementById("musicBtn");
+
+
+    function openInvitation() {
+
+      music.play()
+        .then(function() {
+
+          musicBtn.innerText = "🔊";
+
+        })
+        .catch(function() {
+
+          musicBtn.innerText = "🔇";
+
+        });
+
+    }
+
+
+    function toggleMusic() {
+
+      if (music.paused) {
+
+        music.play()
+          .then(function() {
+
+            musicBtn.innerText = "🔊";
+
+          });
+
+      } else {
+
+        music.pause();
+
+        musicBtn.innerText = "🔇";
+
+      }
+
+    }
+
+
+    /* ================= COPY REKENING ================= */
+
+    function copyRekening() {
+
+      const rekening =
+        "901848072687";
+
+
+      if (
+        navigator.clipboard &&
+        window.isSecureContext
+      ) {
+
+        navigator.clipboard
+          .writeText(rekening)
+          .then(function() {
+
+            alert(
+              "Nomor rekening berhasil disalin."
+            );
+
+          })
+          .catch(function() {
+
+            alert(
+              "Nomor rekening: " +
+              rekening
+            );
+
+          });
+
+      } else {
+
+        alert(
+          "Nomor rekening: " +
+          rekening
+        );
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
